@@ -1,11 +1,12 @@
 import telebot
+import os
 import threading
 import time
 import schedule
 from datetime import datetime
 
 
-BOT_TOKEN = '7833540200:AAGvEK7Nuyi6PEzhUzmXD7kqw75rGXA6-xs'
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 bot = telebot.TeleBot(BOT_TOKEN)
 user_data = {}
