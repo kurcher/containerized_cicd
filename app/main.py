@@ -6,7 +6,7 @@ import schedule
 from datetime import datetime
 
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN = os.getenv("BOT_TOKEN")    
 
 bot = telebot.TeleBot(BOT_TOKEN)
 user_data = {}
