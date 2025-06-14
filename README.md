@@ -25,6 +25,6 @@ A CI/CD pipeline is implemented using GitHub Actions to:
 ## Docker Hub
 
 The Docker image is published at:  
-👉 [https://hub.docker.com/r/your-dockerhub-username/water-reminder-bot](https://hub.docker.com/r/your-dockerhub-username/water-reminder-bot)
+👉 [https://hub.docker.com/r/kurch1k/water-reminder-bot](https://hub.docker.com/r/kurch1k/water-reminder-bot)
 
-> Replace `your-dockerhub-username` with your actual Docker Hub username.
+
