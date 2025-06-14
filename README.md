@@ -1,11 +1,11 @@
-💧 Water Reminder Telegram Bot
+# 💧 Water Reminder Telegram Bot
 
 A simple Telegram bot that reminds users to drink water every 2.5 hours and tracks their daily water intake.  
 The project is containerized using Docker and uses GitHub Actions for CI/CD automation.
 
 ---
 
- 🚀 Features
+## 🚀 Features
 
 - ⏰ Sends a reminder every 2.5 hours
 - 💬 Allows users to input how much water they’ve drunk
@@ -14,7 +14,7 @@ The project is containerized using Docker and uses GitHub Actions for CI/CD auto
 
 ---
 
- 🧾 Project Structure
+## 🧾 Project Structure
 
 water-reminder-bot/
 ├── app/
@@ -26,6 +26,9 @@ water-reminder-bot/
 │ └── ci-cd.yml # GitHub Actions CI/CD workflow
 └── README.md
 
+yaml
+Копировать
+Редактировать
 
 ---
 
@@ -33,9 +36,12 @@ water-reminder-bot/
 
 ### 1. Build the Docker image
 
-bash:
+```bash
 docker build -t water-bot .
-2. Run the container:
+2. Run the container
+bash
+Копировать
+Редактировать
 docker run -d \
   -e BOT_TOKEN=your_telegram_bot_token \
   water-bot
@@ -62,12 +68,15 @@ BOT_TOKEN	Your Telegram bot token
 DOCKER_USERNAME	Your Docker Hub username
 DOCKER_PASSWORD	Your Docker Hub password or token
 
-⚙️ Example GitHub Actions Workflow:
+⚙️ Example GitHub Actions Workflow
+yaml
+Копировать
+Редактировать
 name: CI/CD for Telegram Bot
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build-push-run:
@@ -99,8 +108,10 @@ Start the bot in detached mode
 📦 Docker Hub Image
 You can pull the published image from Docker Hub:
 
+bash
+Копировать
+Редактировать
 docker pull your_dockerhub_username/water-reminder-bot:latest
 📬 Contact
-
-Docker Hub: https://hub.docker.com/u/kurch1k
-
+Author: [@your_username_here]
+Docker Hub: https://hub.docker.com/u/your_dockerhub_username
