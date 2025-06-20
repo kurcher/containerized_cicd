@@ -31,7 +31,7 @@ def handle_progress(message):
 @bot.message_handler(func=lambda message: True)
 def handle_water_input(message):
     user_id = message.chat.id
-    try:
+    try:  
         amount = float(message.text.replace(",", "."))
         if amount <= 0:
             raise ValueError
